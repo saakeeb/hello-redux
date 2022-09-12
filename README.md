@@ -1,6 +1,5 @@
 ## hello-redux
 
-
 ## Here is a file of redux practice
 
 ### redux-starter-3
@@ -81,4 +80,18 @@ const slice = createSlice({
   }
 })
 ```
+
+### redux-multiple-reducer
+
+Here we use `selector` to filter data, also use `memorization` to optimize state performance. We install selector by `npm i reselect`
+
+```bash
+import { createSelector } from "reselect";
+export const getUnresolveBugs = createSelector(
+    state => state.entities.bugs, //input
+    (bugs, projects)=> bugs.filter(bug=> !bug.resolved) //output
+);
+```
+
+Here we filter unresolved bugs.
 
