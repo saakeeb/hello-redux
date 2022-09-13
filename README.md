@@ -1,4 +1,4 @@
-## hello-redux
+## Redux Practice 
 
 ## Here is a file of redux practice
 
@@ -108,3 +108,4 @@ export const getUnresolveBugs = createSelector(
 
 Here we filter unresolved bugs.
 
+***
