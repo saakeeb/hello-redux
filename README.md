@@ -83,6 +83,19 @@ const slice = createSlice({
 
 ### redux-multiple-reducer
 
+Here we use multiple reducer and use it in a store.
+
+```bash
+import { combineReducers } from "redux";
+export default combineReducers({
+    bugs: bugsReducer,
+    projects: projectsReducer,
+    users: usersReducer
+});
+```
+
+Here we wrap reducr in entities and wrap this entitiesinto reducer file, export this reducer into store file
+
 Here we use `selector` to filter data, also use `memorization` to optimize state performance. We install selector by `npm i reselect`
 
 ```bash
