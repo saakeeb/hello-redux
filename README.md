@@ -108,4 +108,39 @@ export const getUnresolveBugs = createSelector(
 
 Here we filter unresolved bugs.
 
+### redux-middleware
+
+Middleware is a path that inter connet action dispatch with store with adddional information. Like log information of every action dispatch.
+
+Wec can build midle ware by that is mention in `middleware` folder. Connect it with store as a middleware.
+
+
+```bash
+configureStore({
+    reducer,
+    devTools: true,
+    middleware: [
+      logger({ description: 'logger' }),
+      toast,
+      middleFunc
+    ] 
+});
+```
+
+ we can use `thunk` as a middleware. We use thunk what is done in middleFunc. In redux tool kit thunk automitically install. but if we use other middleware then thunk got displace. So to use it we have use `getDefaultMiddleware` function.
+
+ ```bash
+ import { getDefaultMiddleware } from "@reduxjs/toolkit";
+ 
+configureStore({
+    reducer,
+    devTools: true,
+    middleware: [
+      ...getDefaultMiddleware(),
+      logger({ description: 'logger' }),
+      toast
+    ] 
+});
+```
+
 ***
