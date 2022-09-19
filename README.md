@@ -143,4 +143,16 @@ configureStore({
 });
 ```
 
+We can do async operation using redux thunk. We pass object as action dispatch but we can pass function  as action dispatch using redux thunk.
+
+```bash
+store.dispatch(()=> {
+  store.dispatch(
+    // async actions - api calling
+    // api url - https://jsonplaceholder.typicode.com/todos
+    // middleware- redux-thunk
+    // axios api
+  );
+});
+```
 ***
