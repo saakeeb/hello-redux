@@ -1,0 +1,17 @@
+.product-item {
+    border: 1px solid green;
+    outline: 2px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    max-width: 320px;
+    width: 100%;
+    padding: 20px 5px;
+}
+
+.product-item:hover{
+    outline: 2px solid green;
+}
