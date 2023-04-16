@@ -11,8 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "4.41.6",
+<<<<<<< HEAD
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^4.11.1"
+=======
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "3.10.3"
+>>>>>>> c44df5822142b32971b1dd55cfe156cf60e02602
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
